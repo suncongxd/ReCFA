@@ -51,7 +51,5 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-/spec_gcc/
-/spec_llvm/
 *.asm
 *.dot
