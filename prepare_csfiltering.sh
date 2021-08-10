@@ -4,14 +4,14 @@
 CP=$1
 
 recfa_root=$(pwd)
-echo $recfa_root
+#echo $recfa_root
 
 binary_root=$recfa_root"/spec_"$CP
-echo $binary_root
+#echo $binary_root
 
 bin_csfilter=$recfa_root"/bin/csfilter.jar"
 
-for OL in O0  O1 O2 O3 ; do #
+for OL in O0; do # O1 O2 O3
   if [ -d $binary_root"/"$OL ]; then
      for file in $(ls $binary_root"/"$OL); do
         if [[ $file == *$CP"_"$OL ]]; then #-f $file && 

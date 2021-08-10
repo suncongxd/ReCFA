@@ -53,6 +53,8 @@ dkms.conf
 
 *.asm
 *.dot
+*.gcc_O0_instru
+*.llvm_O0_instru
 /spec_gcc/O1/
 /spec_gcc/O2/
 /spec_gcc/O3/
