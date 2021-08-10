@@ -7,18 +7,23 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
   bool dealWithRecursion = true;
-  int offset = 0;
+  int name_idx = 0;
 
-  if (argc < 2 || (argc == 3 && dealWithRecursion)) {
+  if (argc < 2 || argc > 3) {
     printf("Usage:\ndeal with recursions and loops:\n./folding "
            "[fileName]\ndeal with loops only:\n./folding -r [fileName]\n");
     return 0;
   }
 
-  if (strcmp("-r", argv[1]) == 0) {
-    dealWithRecursion = false;
-    offset = 1;
+  for (int i = 1; i < argc; i++) {
+    if (argv[i] == "-r")
+      dealWithRecursion = true;
+    else
+      name_idx = i;
   }
+  dealWithRecursion = false;
+  if (name_idx == 0) // no filename found
+    return 0;
 
   MyStack addrStack;
   MyStack circuStack;
@@ -27,9 +32,9 @@ int main(int argc, char *argv[]) {
   FILE *in, *out;
   char *result = new char[100];
   memset(result, 0, 100);
-  strcat(result, argv[offset + 1]);
+  strcat(result, argv[name_idx]);
   strcat(result, "_folded");
-  in = fopen(argv[offset + 1], "r");
+  in = fopen(argv[name_idx], "r");
   out = fopen(result, "w+");
   int buffer;
   int rbyte = 0;
