@@ -6,12 +6,12 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-  bool dealWithRecursion = true;
+  bool dealWithRecursion = false;
   int name_idx = 0;
 
   if (argc < 2 || argc > 3) {
-    printf("Usage:\ndeal with recursions and loops:\n./folding "
-           "[fileName]\ndeal with loops only:\n./folding -r [fileName]\n");
+    printf("Usage:\ndeal with recursions and loops:\n./folding -r"
+           "[fileName]\ndeal with loops only:\n./folding [fileName]\n");
     return 0;
   }
 
@@ -21,7 +21,6 @@ int main(int argc, char *argv[]) {
     else
       name_idx = i;
   }
-  dealWithRecursion = false;
   if (name_idx == 0) // no filename found
     return 0;
 

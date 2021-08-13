@@ -9,6 +9,8 @@ recfa_root=$(pwd)
 binary_root=$recfa_root"/spec_"$CP
 #echo $binary_root
 
+policy_dir=$recfa_root"/policy/M/"
+
 bin_csfilter=$recfa_root"/bin/csfilter.jar"
 
 for OL in O0; do # O1 O2 O3
@@ -39,7 +41,8 @@ for OL in O0; do # O1 O2 O3
            
            echo "> $bin_csfilter $dot_path $asm_path $filtered_output_path"
            java -jar $bin_csfilter $dot_path $asm_path $filtered_output_path
-           echo -e "\n\n"
+           mv $filtered_output_path".map" $policy_dir
+           echo -e "\n"
         fi
      done
   fi

@@ -3,6 +3,7 @@
 #include <string.h>
 #define BOUND 32           // BOUND窗口最大长度
 #define BUFFSIZE 1024 * 10 // BUFFSIZE的大小
+#define LEN 2048
 
 /*
 运行指令: ./fold 待去重的文件名
@@ -16,13 +17,17 @@ void arraycopy(int *a, int astart, int *b, int bstart, int len);
 int naive_folding(int *input, int *result, int bound, int inputsize);
 
 int main(int argc, char *argv[]) {
+  if (argc != 2)
+    return 0;
+
   FILE *in, *out;
   in = fopen(argv[1], "rb");
 
-  char *resultName = new char[100];
-  memset(resultName, 0, 100);
+  char *resultName = new char[LEN];
+  memset(resultName, 0, LEN);
   strcat(resultName, argv[1]);
-  strcat(resultName, "_fold");
+  strcat(resultName, "_gr");
+  // printf("target path name: %s\n", resultName);
 
   out = fopen(resultName, "wb+");
 

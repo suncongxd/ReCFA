@@ -759,7 +759,28 @@ bool createAndInsertForCallAfter(BPatch_addressSpace *app,
 //对于直接调用点，输出该点的当前地址
 bool createAndInsertForDCall(BPatch_addressSpace *app,
                              vector<BPatch_point *> &points) {
-  if (!createAndInsertCurrentAddrStore(app, points)) {
+  BPatch_image *appImage = app->getImage();
+  // *currentPtr = BPatch_originalAddressExpr();
+  BPatch_variableExpr *currentPtr = appImage->findVariable("currentPtr");
+  BPatch_snippet *oriAddr = new BPatch_arithExpr(
+      BPatch_assign, BPatch_arithExpr(BPatch_deref, *currentPtr),
+      BPatch_arithExpr(BPatch_plus, BPatch_originalAddressExpr(),
+                       BPatch_constExpr(0x80000000)));
+
+  BPatch_snippet *isArrayFull = arrayFullSaveInFile(appImage);
+  // currentPtr = currentPtr + 4;
+  BPatch_snippet *currentPtrAddone = new BPatch_arithExpr(
+      BPatch_assign, *currentPtr,
+      BPatch_arithExpr(BPatch_plus, *currentPtr, BPatch_constExpr(4)));
+
+  vector<BPatch_snippet *> items;
+  items.push_back(oriAddr);
+  items.push_back(currentPtrAddone);
+  items.push_back(isArrayFull);
+  BPatch_sequence allItems(items);
+
+  if (!app->insertSnippet(allItems, points, BPatch_lastSnippet)) {
+    fprintf(OUTCHANNEL, "error: insert for direct call failed!\n");
     return false;
   }
 
@@ -1360,20 +1381,19 @@ void getNotRecCallAfters(vector<BPatch_point *> &callAfters,
 }
 
 int main(int argc, char **argv) {
-  bool dealWithRecursion = true;
+  bool dealWithRecursion = false;
   int offset = 0;
 
   if (strcmp("-r", argv[1]) == 0) {
-    dealWithRecursion = false;
+    dealWithRecursion = true;
     offset = 1;
   }
-  if (argc < 4 || (argc == 5 && dealWithRecursion)) {
+  if (argc < 4 || (argc == 5 && !dealWithRecursion)) {
     fprintf(OUTCHANNEL,
-            "Wrong params, true Usage:\n1) If you want to deal with recursions "
-            "and loops, type\n./mutator [mutatee_path] [mutatee_out_path] "
-            "[noNeed_dcall_file]\n2) If you just want to deal with loops, "
-            "type\n./mutator -r [mutatee_path] [mutatee_out_path] "
-            "[noNeed_dcall_file]");
+            "Usage:\ndeal with recursions and loops:\n./mutator -r "
+            "[mutatee_path] [mutatee_out_path] [skipped_dcall_file]\ndeal with "
+            "only loops:\n./mutator [mutatee_path] [mutatee_out_path] "
+            "[skipped_dcall_file]");
     return 0;
   }
 
