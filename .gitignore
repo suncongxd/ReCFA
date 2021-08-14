@@ -55,6 +55,9 @@ dkms.conf
 *.dot
 *.gcc_O0_instru
 *.llvm_O0_instru
+*.gcc_O0_instru-re_folded
+*.gcc_O0_instru-re_folded_gr
+*.gcc_O0_instru-re_folded_gr.zst
 /spec_gcc/O1/
 /spec_gcc/O2/
 /spec_gcc/O3/
