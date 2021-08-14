@@ -20,8 +20,6 @@ OL=O0 # O1 O2 O3
 #option "-l" means the instrumented binary will only be considerd to fold the loops of its execution
 declare -A test_case_option=(
 ["gcc"]="l"
-)
-<<comment
 ["perlbench"]="l"
 ["bzip2"]="r"
 ["mcf"]="l"
@@ -32,6 +30,9 @@ declare -A test_case_option=(
 ["h264ref"]="l"
 ["lbm"]="r"
 ["sphinx_livepretend"]="l"
+)
+<<comment
+
 comment
 
 #["sjeng"]="r" : instrumentation failed.

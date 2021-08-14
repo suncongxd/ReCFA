@@ -289,9 +289,10 @@ void readReceive(char *file, int Main, int Ret) {
   // cout << sto.size() << "push" << endl;
   // printf("%dexecutetime\n", executetime);
   clock_t start, end;
+  bool veri;
   while (rbyte = fread(&buffer, 4, 1, in) == 1) {
     // if((buffer&16777216)&&Maintotal<executetime)
-    if (buffer == 0xffffeeee && Maintotal < 2) {
+    if (buffer == 0xffffeeee && Maintotal < executetime) {
       Maintotal++;
       // printf("%xssssssssssssssssssss",buffer);
       count1 = 0;
@@ -328,9 +329,13 @@ void readReceive(char *file, int Main, int Ret) {
   }
   /// printf("gcc");
   start = clock();
-  verifi(&sto, in, &shadow, Ret, Main);
+  veri = verifi(&sto, in, &shadow, Ret, Main);
   end = clock();
   timeTotal = timeTotal + (end - start);
+  if (!veri) {
+    cout << total << "events sucess" << endl;
+    cout << "No events left unprocessed.Progarm is secure" << endl;
+  }
   fclose(in);
 }
 void FtoN(queue<int> *sto, int For) {
@@ -436,13 +441,15 @@ bool verifi(queue<int> *sto, FILE *in, stack<int> *shadow, int Ret, int Main) {
       }
       if (shadow->empty()) {
         // cout<<sto->front()<<" "<<buffer<<endl;
-        printf("运行结束时栈大小%lu \n", sto->size());
-        printf("栈顶%x  当前验证地址%x ", sto->front(), buffer);
+        // printf("运行结束时栈大小%lu \n", sto->size());
+        // printf("栈顶%x  当前验证地址%x ", sto->front(), buffer);
         // cout<<buffer<<"  "<<Ret<<endl;
-        printf("Stack top:%x  Ret target:%x\n", buffer, Ret);
+        // printf("Stack top:%x  Ret target:%x\n", buffer, Ret);
         if (buffer == Ret && (sto->front() == (0x7fffeeee))) {
-          printf("%x ", sto->front());
-          cout << "成功" << endl << total << endl;
+          // printf("%x ", sto->front());
+          // cout << "成功" << endl << total << endl;
+          cout << total << "events sucess" << endl;
+          cout << "No events left unprocessed.Progarm is secure" << endl;
           return true;
         } else
           continue;
@@ -457,8 +464,12 @@ bool verifi(queue<int> *sto, FILE *in, stack<int> *shadow, int Ret, int Main) {
       {
         // printf("sto->front()%x   shadow->top()%x  buffer%x
         // total%d\n",sto->front(),shadow->top(),buffer,total); exit(-1);
-        if (sto->front() == 0x7fffeeee)
+        if ((sto->empty()) ||
+            (sto->front() == 0x7fffeeee || buffer == 0x7fffeeee)) {
+          cout << total << "events sucess" << endl;
+          cout << "No events left unprocessed.Progarm is secure" << endl;
           return true;
+        }
         flag = false;
         while (!shadow->empty()) {
           // printf("shadowstack1\n");
@@ -473,7 +484,7 @@ bool verifi(queue<int> *sto, FILE *in, stack<int> *shadow, int Ret, int Main) {
           }
         }
         if (shadow->empty() && !flag) {
-          printf("fail\n");
+          printf("fail,%ld events unprocessed\n", sto->size());
           return true;
         }
       }
