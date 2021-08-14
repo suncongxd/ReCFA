@@ -1,0 +1,1432 @@
+Object: libquantum_base.gcc_O0
+Functions: 151
+
+[varargs]
+0x401840 = 5 (quantum_unbounded_toffoli) 
+0x40542a = 5 (muxfa) 
+0x405616 = 5 (muxfa_inv) 
+0x405802 = 5 (muxha) 
+0x4058dc = 5 (muxha_inv) 
+0x405fd2 = 5 (quantum_objcode_put) 
+
+[args]
+0x400900 = 0 (_init) 
+0x400aa0 = 3 (_start) 
+0x400ad0 = 0 (_dl_relocate_static_pie) 
+0x400ae0 = 0 (deregister_tm_clones) 
+0x400b10 = 0 (register_tm_clones) 
+0x400b50 = 0 (__do_global_dtors_aux) 
+0x400b80 = 0 (frame_dummy) 
+0x400b87 = 2 (quantum_ipow) 
+0x400bbc = 2 (quantum_gcd) 
+0x400be9 = 3 (quantum_frac_approx) 
+0x400d5a = 1 (quantum_getwidth) 
+0x400d86 = 2 (quantum_inverse_mod) 
+0x400db4 = 0 (quantum_real) 
+0x400de7 = 0 (quantum_imag) 
+0x400e1b = 0 (quantum_prob_inline) 
+0x400e8f = 0 (quantum_conj) 
+0x400f23 = 0 (quantum_prob) 
+0x400f5c = 0 (quantum_cexp) 
+0x400fbc = 0 (quantum_get_decoherence) 
+0x400fca = 0 (quantum_set_decoherence) 
+0x40100d = 1 (quantum_decohere) 
+0x401327 = 5 (quantum_exp_mod_n) 
+0x4013ce = 0 (quantum_real) 
+0x401401 = 0 (quantum_imag) 
+0x401435 = 0 (quantum_prob_inline) 
+0x4014a9 = 2 (quantum_hash64) 
+0x4014e5 = 1 (quantum_get_state) 
+0x40158a = 3 (quantum_add_hash) 
+0x401614 = 3 (quantum_cnot) 
+0x40170d = 4 (quantum_toffoli) 
+0x401b17 = 2 (quantum_sigma_x) 
+0x401bd8 = 2 (quantum_sigma_y) 
+0x401d82 = 2 (quantum_sigma_z) 
+0x401e5f = 2 (quantum_swaptheleads) 
+0x402026 = 3 (quantum_swaptheleads_omuln_controlled) 
+0x4020d5 = 4 (quantum_gate1) 
+0x402d98 = 5 (quantum_gate2) 
+0x403a61 = 2 (quantum_hadamard) 
+0x403b4a = 2 (quantum_walsh) 
+0x403b82 = 2 (quantum_r_x) 
+0x403cf7 = 2 (quantum_r_y) 
+0x403e49 = 2 (quantum_r_z) 
+0x403ff2 = 2 (quantum_phase_scale) 
+0x4040f2 = 2 (quantum_phase_kick) 
+0x404225 = 3 (quantum_cond_phase) 
+0x4043c1 = 3 (quantum_cond_phase_inv) 
+0x40453c = 3 (quantum_cond_phase_kick) 
+0x4046a5 = 1 (quantum_gate_counter) 
+0x4046dd = 0 (quantum_real) 
+0x404710 = 0 (quantum_imag) 
+0x404744 = 1 (quantum_memman) 
+0x40478b = 2 (quantum_new_matrix) 
+0x404810 = 1 (quantum_delete_matrix) 
+0x404865 = 2 (quantum_print_matrix) 
+0x404995 = 0 (quantum_real) 
+0x4049c8 = 0 (quantum_imag) 
+0x4049fc = 0 (quantum_prob_inline) 
+0x404a70 = 0 (quantum_frand) 
+0x404a8d = 0 (quantum_measure) 
+0x404b51 = 2 (quantum_bmeasure) 
+0x404cac = 2 (quantum_bmeasure_bitpreserve) 
+0x4050d9 = 3 (test_sum) 
+0x4059b6 = 4 (madd) 
+0x405adf = 4 (madd_inv) 
+0x405c0b = 4 (addn) 
+0x405c5e = 4 (addn_inv) 
+0x405cdd = 4 (add_mod_n) 
+0x405d1d = 2 (quantum_mu2char) 
+0x405d93 = 2 (quantum_int2char) 
+0x405e0d = 1 (quantum_double2char) 
+0x405e59 = 1 (quantum_char2mu) 
+0x405eb6 = 1 (quantum_char2int) 
+0x405f0e = 1 (quantum_char2double) 
+0x405f28 = 0 (quantum_objcode_start) 
+0x405f81 = 0 (quantum_objcode_stop) 
+0x406743 = 1 (quantum_objcode_write) 
+0x4067ec = 1 (quantum_objcode_file) 
+0x406802 = 1 (quantum_objcode_exit) 
+0x406825 = 2 (quantum_objcode_run) 
+0x406e92 = 4 (emul) 
+0x406ef7 = 5 (muln) 
+0x406fe3 = 5 (muln_inv) 
+0x4070e6 = 5 (mul_mod_n) 
+0x407148 = 2 (quantum_qec_set_status) 
+0x407167 = 2 (quantum_qec_get_status) 
+0x40719c = 3 (quantum_qec_encode) 
+0x4072e1 = 3 (quantum_qec_decode) 
+0x407491 = 3 (quantum_qec_counter) 
+0x40752f = 2 (quantum_sigma_x_ft) 
+0x4075e3 = 3 (quantum_cnot_ft) 
+0x4076b9 = 4 (quantum_toffoli_ft) 
+0x4078fd = 2 (quantum_qft) 
+0x40795f = 2 (quantum_qft_inv) 
+0x4079c1 = 2 (quantum_hash64) 
+0x4079fd = 1 (quantum_get_state) 
+0x407aa2 = 3 (quantum_add_hash) 
+0x407b2c = 0 (quantum_real) 
+0x407b5f = 0 (quantum_imag) 
+0x407b93 = 0 (quantum_prob_inline) 
+0x407c07 = 3 (quantum_matrix2qureg) 
+0x407e72 = 3 (quantum_new_qureg) 
+0x407ff6 = 0 (quantum_qureg2matrix) 
+0x408082 = 1 (quantum_destroy_hash) 
+0x4080cf = 1 (quantum_delete_qureg) 
+0x40811d = 1 (quantum_delete_qureg_hashpreserve) 
+0x40815f = 0 (quantum_print_qureg) 
+0x4082fe = 0 (quantum_print_expn) 
+0x408361 = 2 (quantum_addscratch) 
+0x4083e7 = 0 (quantum_print_hash) 
+0x408472 = 3 (quantum_kronecker) 
+0x4086e4 = 3 (quantum_state_collapse) 
+0x408a04 = 2 (quantum_dot_product) 
+0x408c09 = 2 (main) 
+0x409098 = 0 (quantum_get_version) 
+0x4090a5 = 1 (spec_srand) 
+0x4090b8 = 0 (spec_rand) 
+0x409160 = 0 (__mulsc3) 
+0x409400 = 0 (__divsc3) 
+0x4096e0 = 3 (__libc_csu_init) 
+0x409750 = 0 (__libc_csu_fini) 
+0x409760 = 0 (atexit) 
+0x409770 = 0 (_fini) 
+
+[icall-args]
+0x400910 = 6 (_init.0)
+0x400ac4 = 6 (_start.0)
+0x409729 = 3 (__libc_csu_init.0)
+
+[plts]
+0x400930 = getenv
+0x400940 = free
+0x400950 = putchar
+0x400960 = puts
+0x400970 = fread
+0x400980 = fclose
+0x400990 = printf
+0x4009a0 = log
+0x4009b0 = fgetc
+0x4009c0 = cos
+0x4009d0 = calloc
+0x4009e0 = fprintf
+0x4009f0 = feof
+0x400a00 = malloc
+0x400a10 = realloc
+0x400a20 = fopen
+0x400a30 = perror
+0x400a40 = sin
+0x400a50 = __cxa_atexit
+0x400a60 = atoi
+0x400a70 = exit
+0x400a80 = fwrite
+0x400a90 = sqrt
+
+[disas-errors]
+
+[non-voids]
+0x400900 = _init
+0x400aa0 = _start
+0x400ae0 = deregister_tm_clones
+0x400b10 = register_tm_clones
+0x400b80 = frame_dummy
+0x400b87 = quantum_ipow
+0x400bbc = quantum_gcd
+0x400be9 = quantum_frac_approx
+0x400d5a = quantum_getwidth
+0x400d86 = quantum_inverse_mod
+0x400db4 = quantum_real
+0x400de7 = quantum_imag
+0x400e1b = quantum_prob_inline
+0x400e8f = quantum_conj
+0x400f23 = quantum_prob
+0x400f5c = quantum_cexp
+0x40100d = quantum_decohere
+0x401327 = quantum_exp_mod_n
+0x4013ce = quantum_real
+0x401401 = quantum_imag
+0x401435 = quantum_prob_inline
+0x4014a9 = quantum_hash64
+0x4014e5 = quantum_get_state
+0x40158a = quantum_add_hash
+0x401614 = quantum_cnot
+0x40170d = quantum_toffoli
+0x401840 = quantum_unbounded_toffoli
+0x401b17 = quantum_sigma_x
+0x401bd8 = quantum_sigma_y
+0x401d82 = quantum_sigma_z
+0x401e5f = quantum_swaptheleads
+0x402026 = quantum_swaptheleads_omuln_controlled
+0x4020d5 = quantum_gate1
+0x402d98 = quantum_gate2
+0x403a61 = quantum_hadamard
+0x403b4a = quantum_walsh
+0x403b82 = quantum_r_x
+0x403cf7 = quantum_r_y
+0x403e49 = quantum_r_z
+0x403ff2 = quantum_phase_scale
+0x4040f2 = quantum_phase_kick
+0x404225 = quantum_cond_phase
+0x4043c1 = quantum_cond_phase_inv
+0x40453c = quantum_cond_phase_kick
+0x4046a5 = quantum_gate_counter
+0x4046dd = quantum_real
+0x404710 = quantum_imag
+0x404744 = quantum_memman
+0x40478b = quantum_new_matrix
+0x404810 = quantum_delete_matrix
+0x404865 = quantum_print_matrix
+0x404995 = quantum_real
+0x4049c8 = quantum_imag
+0x4049fc = quantum_prob_inline
+0x404a70 = quantum_frand
+0x404a8d = quantum_measure
+0x404b51 = quantum_bmeasure
+0x404cac = quantum_bmeasure_bitpreserve
+0x4050d9 = test_sum
+0x40542a = muxfa
+0x405616 = muxfa_inv
+0x405802 = muxha
+0x4058dc = muxha_inv
+0x4059b6 = madd
+0x405adf = madd_inv
+0x405c0b = addn
+0x405c5e = addn_inv
+0x405cdd = add_mod_n
+0x405d1d = quantum_mu2char
+0x405d93 = quantum_int2char
+0x405e0d = quantum_double2char
+0x405e59 = quantum_char2mu
+0x405eb6 = quantum_char2int
+0x405f0e = quantum_char2double
+0x405f28 = quantum_objcode_start
+0x405f81 = quantum_objcode_stop
+0x405fd2 = quantum_objcode_put
+0x406743 = quantum_objcode_write
+0x4067ec = quantum_objcode_file
+0x406802 = quantum_objcode_exit
+0x406825 = quantum_objcode_run
+0x406e92 = emul
+0x406ef7 = muln
+0x406fe3 = muln_inv
+0x4070e6 = mul_mod_n
+0x407148 = quantum_qec_set_status
+0x407167 = quantum_qec_get_status
+0x40719c = quantum_qec_encode
+0x4072e1 = quantum_qec_decode
+0x407491 = quantum_qec_counter
+0x40752f = quantum_sigma_x_ft
+0x4075e3 = quantum_cnot_ft
+0x4076b9 = quantum_toffoli_ft
+0x4078fd = quantum_qft
+0x40795f = quantum_qft_inv
+0x4079c1 = quantum_hash64
+0x4079fd = quantum_get_state
+0x407aa2 = quantum_add_hash
+0x407b2c = quantum_real
+0x407b5f = quantum_imag
+0x407b93 = quantum_prob_inline
+0x407c07 = quantum_matrix2qureg
+0x407e72 = quantum_new_qureg
+0x407ff6 = quantum_qureg2matrix
+0x408082 = quantum_destroy_hash
+0x4080cf = quantum_delete_qureg
+0x40811d = quantum_delete_qureg_hashpreserve
+0x40815f = quantum_print_qureg
+0x4082fe = quantum_print_expn
+0x408361 = quantum_addscratch
+0x4083e7 = quantum_print_hash
+0x408472 = quantum_kronecker
+0x4086e4 = quantum_state_collapse
+0x408a04 = quantum_dot_product
+0x408c09 = main
+0x409098 = quantum_get_version
+0x4090a5 = spec_srand
+0x4090b8 = spec_rand
+0x409160 = __mulsc3
+0x409400 = __divsc3
+0x4096e0 = __libc_csu_init
+0x409760 = atexit
+
+[non-void-icalls]
+
+[prof-goals]
+0x400910 = _init.0 -> 0x4096e0 = __libc_csu_init
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  long long unsigned int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  long long unsigned int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 32  
+  this type has more than one fields    
+  the name of the type is  long long unsigned int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_matrix 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 16  
+  this type has more than one fields    
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_matrix 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 16  
+  this type has more than one fields    
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  long int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_matrix * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  quantum_matrix 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 16  
+  this type has more than one fields    
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 32  
+  this type has more than one fields    
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  unsigned char * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  long long unsigned int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  unsigned char * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  unsigned char * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  double 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  unsigned char * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  unsigned char * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  unsigned char * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  unsigned char 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 1  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  long long unsigned int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  long long unsigned int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 32  
+  this type has more than one fields    
+  the name of the type is  long long unsigned int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  complex float 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  quantum_matrix * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  long long unsigned int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 32  
+  this type has more than one fields    
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 32  
+  this type has more than one fields    
+  the name of the type is  quantum_reg 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 32  
+  this type has more than one fields    
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 32  
+  this type has more than one fields    
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is  quantum_reg 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 32  
+  this type has more than one fields    
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  quantum_reg * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the size of _icall_args_ is  3  
+  the size of _func_to_int_ is  126  
+  the size of _icall_number is  3  
+  now is going to handle the functions   
+Indirectstar0x400910  6 Indirectend0x408c09 2 
+Indirectstar0x400910  6 Indirectend0x400900 0 
+Indirectstar0x400910  6 Indirectend0x400aa0 3 
+Indirectstar0x400910  6 Indirectend0x400ad0 0 
+Indirectstar0x400910  6 Indirectend0x400b50 0 
+Indirectstar0x400910  6 Indirectend0x400b80 0 
+Indirectstar0x400910  6 Indirectend0x409160 0 
+Indirectstar0x400910  6 Indirectend0x409400 0 
+Indirectstar0x400910  6 Indirectend0x4096e0 3 
+Indirectstar0x400910  6 Indirectend0x409750 0 
+Indirectstar0x400910  6 Indirectend0x409760 0 
+Indirectstar0x400910  6 Indirectend0x409770 0 
+Indirectstar0x400910  6 Indirectend0x400b87 2 
+Indirectstar0x400910  6 Indirectend0x400bbc 2 
+Indirectstar0x400910  6 Indirectend0x400be9 3 
+Indirectstar0x400910  6 Indirectend0x400d5a 1 
+Indirectstar0x400910  6 Indirectend0x400d86 2 
+Indirectstar0x400910  6 Indirectend0x400db4 0 
+Indirectstar0x400910  6 Indirectend0x400de7 0 
+Indirectstar0x400910  6 Indirectend0x400e1b 0 
+Indirectstar0x400910  6 Indirectend0x400e8f 0 
+Indirectstar0x400910  6 Indirectend0x400f23 0 
+Indirectstar0x400910  6 Indirectend0x400f5c 0 
+Indirectstar0x400910  6 Indirectend0x400fbc 0 
+Indirectstar0x400910  6 Indirectend0x400fca 0 
+Indirectstar0x400910  6 Indirectend0x40100d 1 
+Indirectstar0x400910  6 Indirectend0x401327 5 
+Indirectstar0x400910  6 Indirectend0x4013ce 0 
+Indirectstar0x400910  6 Indirectend0x401401 0 
+Indirectstar0x400910  6 Indirectend0x401435 0 
+Indirectstar0x400910  6 Indirectend0x4014a9 2 
+Indirectstar0x400910  6 Indirectend0x4014e5 1 
+Indirectstar0x400910  6 Indirectend0x40158a 3 
+Indirectstar0x400910  6 Indirectend0x401614 3 
+Indirectstar0x400910  6 Indirectend0x40170d 4 
+Indirectstar0x400910  6 Indirectend0x401840 5 
+Indirectstar0x400910  6 Indirectend0x401b17 2 
+Indirectstar0x400910  6 Indirectend0x401bd8 2 
+Indirectstar0x400910  6 Indirectend0x401d82 2 
+Indirectstar0x400910  6 Indirectend0x401e5f 2 
+Indirectstar0x400910  6 Indirectend0x402026 3 
+Indirectstar0x400910  6 Indirectend0x4020d5 4 
+Indirectstar0x400910  6 Indirectend0x402d98 5 
+Indirectstar0x400910  6 Indirectend0x403a61 2 
+Indirectstar0x400910  6 Indirectend0x403b4a 2 
+Indirectstar0x400910  6 Indirectend0x403b82 2 
+Indirectstar0x400910  6 Indirectend0x403cf7 2 
+Indirectstar0x400910  6 Indirectend0x403e49 2 
+Indirectstar0x400910  6 Indirectend0x403ff2 2 
+Indirectstar0x400910  6 Indirectend0x4040f2 2 
+Indirectstar0x400910  6 Indirectend0x404225 3 
+Indirectstar0x400910  6 Indirectend0x4043c1 3 
+Indirectstar0x400910  6 Indirectend0x40453c 3 
+Indirectstar0x400910  6 Indirectend0x4046a5 1 
+Indirectstar0x400910  6 Indirectend0x4046dd 0 
+Indirectstar0x400910  6 Indirectend0x404710 0 
+Indirectstar0x400910  6 Indirectend0x404744 1 
+Indirectstar0x400910  6 Indirectend0x40478b 2 
+Indirectstar0x400910  6 Indirectend0x404810 1 
+Indirectstar0x400910  6 Indirectend0x404865 2 
+Indirectstar0x400910  6 Indirectend0x404995 0 
+Indirectstar0x400910  6 Indirectend0x4049c8 0 
+Indirectstar0x400910  6 Indirectend0x4049fc 0 
+Indirectstar0x400910  6 Indirectend0x404a70 0 
+Indirectstar0x400910  6 Indirectend0x404a8d 0 
+Indirectstar0x400910  6 Indirectend0x404b51 2 
+Indirectstar0x400910  6 Indirectend0x404cac 2 
+Indirectstar0x400910  6 Indirectend0x4050d9 3 
+Indirectstar0x400910  6 Indirectend0x40542a 5 
+Indirectstar0x400910  6 Indirectend0x405616 5 
+Indirectstar0x400910  6 Indirectend0x405802 5 
+Indirectstar0x400910  6 Indirectend0x4058dc 5 
+Indirectstar0x400910  6 Indirectend0x4059b6 4 
+Indirectstar0x400910  6 Indirectend0x405adf 4 
+Indirectstar0x400910  6 Indirectend0x405c0b 4 
+Indirectstar0x400910  6 Indirectend0x405c5e 4 
+Indirectstar0x400910  6 Indirectend0x405cdd 4 
+Indirectstar0x400910  6 Indirectend0x405d1d 2 
+Indirectstar0x400910  6 Indirectend0x405d93 2 
+Indirectstar0x400910  6 Indirectend0x405e0d 1 
+Indirectstar0x400910  6 Indirectend0x405e59 1 
+Indirectstar0x400910  6 Indirectend0x405eb6 1 
+Indirectstar0x400910  6 Indirectend0x405f0e 1 
+Indirectstar0x400910  6 Indirectend0x405f28 0 
+Indirectstar0x400910  6 Indirectend0x405f81 0 
+Indirectstar0x400910  6 Indirectend0x405fd2 5 
+Indirectstar0x400910  6 Indirectend0x406743 1 
+Indirectstar0x400910  6 Indirectend0x4067ec 1 
+Indirectstar0x400910  6 Indirectend0x406802 1 
+Indirectstar0x400910  6 Indirectend0x406825 2 
+Indirectstar0x400910  6 Indirectend0x406e92 4 
+Indirectstar0x400910  6 Indirectend0x406ef7 5 
+Indirectstar0x400910  6 Indirectend0x406fe3 5 
+Indirectstar0x400910  6 Indirectend0x4070e6 5 
+Indirectstar0x400910  6 Indirectend0x407148 2 
+Indirectstar0x400910  6 Indirectend0x407167 2 
+Indirectstar0x400910  6 Indirectend0x40719c 3 
+Indirectstar0x400910  6 Indirectend0x4072e1 3 
+Indirectstar0x400910  6 Indirectend0x407491 3 
+Indirectstar0x400910  6 Indirectend0x40752f 2 
+Indirectstar0x400910  6 Indirectend0x4075e3 3 
+Indirectstar0x400910  6 Indirectend0x4076b9 4 
+Indirectstar0x400910  6 Indirectend0x4078fd 2 
+Indirectstar0x400910  6 Indirectend0x40795f 2 
+Indirectstar0x400910  6 Indirectend0x4079c1 2 
+Indirectstar0x400910  6 Indirectend0x4079fd 1 
+Indirectstar0x400910  6 Indirectend0x407aa2 3 
+Indirectstar0x400910  6 Indirectend0x407b2c 0 
+Indirectstar0x400910  6 Indirectend0x407b5f 0 
+Indirectstar0x400910  6 Indirectend0x407b93 0 
+Indirectstar0x400910  6 Indirectend0x407c07 3 
+Indirectstar0x400910  6 Indirectend0x407e72 3 
+Indirectstar0x400910  6 Indirectend0x407ff6 0 
+Indirectstar0x400910  6 Indirectend0x408082 1 
+Indirectstar0x400910  6 Indirectend0x4080cf 1 
+Indirectstar0x400910  6 Indirectend0x40811d 1 
+Indirectstar0x400910  6 Indirectend0x40815f 0 
+Indirectstar0x400910  6 Indirectend0x4082fe 0 
+Indirectstar0x400910  6 Indirectend0x408361 2 
+Indirectstar0x400910  6 Indirectend0x4083e7 0 
+Indirectstar0x400910  6 Indirectend0x408472 3 
+Indirectstar0x400910  6 Indirectend0x4086e4 3 
+Indirectstar0x400910  6 Indirectend0x408a04 2 
+Indirectstar0x400910  6 Indirectend0x409098 0 
+Indirectstar0x400910  6 Indirectend0x4090a5 1 
+Indirectstar0x400910  6 Indirectend0x4090b8 0 
+Indirectstar0x400ac4  6 Indirectend0x408c09 2 
+Indirectstar0x400ac4  6 Indirectend0x400900 0 
+Indirectstar0x400ac4  6 Indirectend0x400aa0 3 
+Indirectstar0x400ac4  6 Indirectend0x400ad0 0 
+Indirectstar0x400ac4  6 Indirectend0x400b50 0 
+Indirectstar0x400ac4  6 Indirectend0x400b80 0 
+Indirectstar0x400ac4  6 Indirectend0x409160 0 
+Indirectstar0x400ac4  6 Indirectend0x409400 0 
+Indirectstar0x400ac4  6 Indirectend0x4096e0 3 
+Indirectstar0x400ac4  6 Indirectend0x409750 0 
+Indirectstar0x400ac4  6 Indirectend0x409760 0 
+Indirectstar0x400ac4  6 Indirectend0x409770 0 
+Indirectstar0x400ac4  6 Indirectend0x400b87 2 
+Indirectstar0x400ac4  6 Indirectend0x400bbc 2 
+Indirectstar0x400ac4  6 Indirectend0x400be9 3 
+Indirectstar0x400ac4  6 Indirectend0x400d5a 1 
+Indirectstar0x400ac4  6 Indirectend0x400d86 2 
+Indirectstar0x400ac4  6 Indirectend0x400db4 0 
+Indirectstar0x400ac4  6 Indirectend0x400de7 0 
+Indirectstar0x400ac4  6 Indirectend0x400e1b 0 
+Indirectstar0x400ac4  6 Indirectend0x400e8f 0 
+Indirectstar0x400ac4  6 Indirectend0x400f23 0 
+Indirectstar0x400ac4  6 Indirectend0x400f5c 0 
+Indirectstar0x400ac4  6 Indirectend0x400fbc 0 
+Indirectstar0x400ac4  6 Indirectend0x400fca 0 
+Indirectstar0x400ac4  6 Indirectend0x40100d 1 
+Indirectstar0x400ac4  6 Indirectend0x401327 5 
+Indirectstar0x400ac4  6 Indirectend0x4013ce 0 
+Indirectstar0x400ac4  6 Indirectend0x401401 0 
+Indirectstar0x400ac4  6 Indirectend0x401435 0 
+Indirectstar0x400ac4  6 Indirectend0x4014a9 2 
+Indirectstar0x400ac4  6 Indirectend0x4014e5 1 
+Indirectstar0x400ac4  6 Indirectend0x40158a 3 
+Indirectstar0x400ac4  6 Indirectend0x401614 3 
+Indirectstar0x400ac4  6 Indirectend0x40170d 4 
+Indirectstar0x400ac4  6 Indirectend0x401840 5 
+Indirectstar0x400ac4  6 Indirectend0x401b17 2 
+Indirectstar0x400ac4  6 Indirectend0x401bd8 2 
+Indirectstar0x400ac4  6 Indirectend0x401d82 2 
+Indirectstar0x400ac4  6 Indirectend0x401e5f 2 
+Indirectstar0x400ac4  6 Indirectend0x402026 3 
+Indirectstar0x400ac4  6 Indirectend0x4020d5 4 
+Indirectstar0x400ac4  6 Indirectend0x402d98 5 
+Indirectstar0x400ac4  6 Indirectend0x403a61 2 
+Indirectstar0x400ac4  6 Indirectend0x403b4a 2 
+Indirectstar0x400ac4  6 Indirectend0x403b82 2 
+Indirectstar0x400ac4  6 Indirectend0x403cf7 2 
+Indirectstar0x400ac4  6 Indirectend0x403e49 2 
+Indirectstar0x400ac4  6 Indirectend0x403ff2 2 
+Indirectstar0x400ac4  6 Indirectend0x4040f2 2 
+Indirectstar0x400ac4  6 Indirectend0x404225 3 
+Indirectstar0x400ac4  6 Indirectend0x4043c1 3 
+Indirectstar0x400ac4  6 Indirectend0x40453c 3 
+Indirectstar0x400ac4  6 Indirectend0x4046a5 1 
+Indirectstar0x400ac4  6 Indirectend0x4046dd 0 
+Indirectstar0x400ac4  6 Indirectend0x404710 0 
+Indirectstar0x400ac4  6 Indirectend0x404744 1 
+Indirectstar0x400ac4  6 Indirectend0x40478b 2 
+Indirectstar0x400ac4  6 Indirectend0x404810 1 
+Indirectstar0x400ac4  6 Indirectend0x404865 2 
+Indirectstar0x400ac4  6 Indirectend0x404995 0 
+Indirectstar0x400ac4  6 Indirectend0x4049c8 0 
+Indirectstar0x400ac4  6 Indirectend0x4049fc 0 
+Indirectstar0x400ac4  6 Indirectend0x404a70 0 
+Indirectstar0x400ac4  6 Indirectend0x404a8d 0 
+Indirectstar0x400ac4  6 Indirectend0x404b51 2 
+Indirectstar0x400ac4  6 Indirectend0x404cac 2 
+Indirectstar0x400ac4  6 Indirectend0x4050d9 3 
+Indirectstar0x400ac4  6 Indirectend0x40542a 5 
+Indirectstar0x400ac4  6 Indirectend0x405616 5 
+Indirectstar0x400ac4  6 Indirectend0x405802 5 
+Indirectstar0x400ac4  6 Indirectend0x4058dc 5 
+Indirectstar0x400ac4  6 Indirectend0x4059b6 4 
+Indirectstar0x400ac4  6 Indirectend0x405adf 4 
+Indirectstar0x400ac4  6 Indirectend0x405c0b 4 
+Indirectstar0x400ac4  6 Indirectend0x405c5e 4 
+Indirectstar0x400ac4  6 Indirectend0x405cdd 4 
+Indirectstar0x400ac4  6 Indirectend0x405d1d 2 
+Indirectstar0x400ac4  6 Indirectend0x405d93 2 
+Indirectstar0x400ac4  6 Indirectend0x405e0d 1 
+Indirectstar0x400ac4  6 Indirectend0x405e59 1 
+Indirectstar0x400ac4  6 Indirectend0x405eb6 1 
+Indirectstar0x400ac4  6 Indirectend0x405f0e 1 
+Indirectstar0x400ac4  6 Indirectend0x405f28 0 
+Indirectstar0x400ac4  6 Indirectend0x405f81 0 
+Indirectstar0x400ac4  6 Indirectend0x405fd2 5 
+Indirectstar0x400ac4  6 Indirectend0x406743 1 
+Indirectstar0x400ac4  6 Indirectend0x4067ec 1 
+Indirectstar0x400ac4  6 Indirectend0x406802 1 
+Indirectstar0x400ac4  6 Indirectend0x406825 2 
+Indirectstar0x400ac4  6 Indirectend0x406e92 4 
+Indirectstar0x400ac4  6 Indirectend0x406ef7 5 
+Indirectstar0x400ac4  6 Indirectend0x406fe3 5 
+Indirectstar0x400ac4  6 Indirectend0x4070e6 5 
+Indirectstar0x400ac4  6 Indirectend0x407148 2 
+Indirectstar0x400ac4  6 Indirectend0x407167 2 
+Indirectstar0x400ac4  6 Indirectend0x40719c 3 
+Indirectstar0x400ac4  6 Indirectend0x4072e1 3 
+Indirectstar0x400ac4  6 Indirectend0x407491 3 
+Indirectstar0x400ac4  6 Indirectend0x40752f 2 
+Indirectstar0x400ac4  6 Indirectend0x4075e3 3 
+Indirectstar0x400ac4  6 Indirectend0x4076b9 4 
+Indirectstar0x400ac4  6 Indirectend0x4078fd 2 
+Indirectstar0x400ac4  6 Indirectend0x40795f 2 
+Indirectstar0x400ac4  6 Indirectend0x4079c1 2 
+Indirectstar0x400ac4  6 Indirectend0x4079fd 1 
+Indirectstar0x400ac4  6 Indirectend0x407aa2 3 
+Indirectstar0x400ac4  6 Indirectend0x407b2c 0 
+Indirectstar0x400ac4  6 Indirectend0x407b5f 0 
+Indirectstar0x400ac4  6 Indirectend0x407b93 0 
+Indirectstar0x400ac4  6 Indirectend0x407c07 3 
+Indirectstar0x400ac4  6 Indirectend0x407e72 3 
+Indirectstar0x400ac4  6 Indirectend0x407ff6 0 
+Indirectstar0x400ac4  6 Indirectend0x408082 1 
+Indirectstar0x400ac4  6 Indirectend0x4080cf 1 
+Indirectstar0x400ac4  6 Indirectend0x40811d 1 
+Indirectstar0x400ac4  6 Indirectend0x40815f 0 
+Indirectstar0x400ac4  6 Indirectend0x4082fe 0 
+Indirectstar0x400ac4  6 Indirectend0x408361 2 
+Indirectstar0x400ac4  6 Indirectend0x4083e7 0 
+Indirectstar0x400ac4  6 Indirectend0x408472 3 
+Indirectstar0x400ac4  6 Indirectend0x4086e4 3 
+Indirectstar0x400ac4  6 Indirectend0x408a04 2 
+Indirectstar0x400ac4  6 Indirectend0x409098 0 
+Indirectstar0x400ac4  6 Indirectend0x4090a5 1 
+Indirectstar0x400ac4  6 Indirectend0x4090b8 0 
+Indirectstar0x409729  3 Indirectend0x408c09 2 
+Indirectstar0x409729  3 Indirectend0x400900 0 
+Indirectstar0x409729  3 Indirectend0x400aa0 3 
+Indirectstar0x409729  3 Indirectend0x400ad0 0 
+Indirectstar0x409729  3 Indirectend0x400b50 0 
+Indirectstar0x409729  3 Indirectend0x400b80 0 
+Indirectstar0x409729  3 Indirectend0x409160 0 
+Indirectstar0x409729  3 Indirectend0x409400 0 
+Indirectstar0x409729  3 Indirectend0x4096e0 3 
+Indirectstar0x409729  3 Indirectend0x409750 0 
+Indirectstar0x409729  3 Indirectend0x409760 0 
+Indirectstar0x409729  3 Indirectend0x409770 0 
+Indirectstar0x409729  3 Indirectend0x400b87 2 
+Indirectstar0x409729  3 Indirectend0x400bbc 2 
+Indirectstar0x409729  3 Indirectend0x400be9 3 
+Indirectstar0x409729  3 Indirectend0x400d5a 1 
+Indirectstar0x409729  3 Indirectend0x400d86 2 
+Indirectstar0x409729  3 Indirectend0x400db4 0 
+Indirectstar0x409729  3 Indirectend0x400de7 0 
+Indirectstar0x409729  3 Indirectend0x400e1b 0 
+Indirectstar0x409729  3 Indirectend0x400e8f 0 
+Indirectstar0x409729  3 Indirectend0x400f23 0 
+Indirectstar0x409729  3 Indirectend0x400f5c 0 
+Indirectstar0x409729  3 Indirectend0x400fbc 0 
+Indirectstar0x409729  3 Indirectend0x400fca 0 
+Indirectstar0x409729  3 Indirectend0x40100d 1 
+Indirectstar0x409729  3 Indirectend0x4013ce 0 
+Indirectstar0x409729  3 Indirectend0x401401 0 
+Indirectstar0x409729  3 Indirectend0x401435 0 
+Indirectstar0x409729  3 Indirectend0x4014a9 2 
+Indirectstar0x409729  3 Indirectend0x4014e5 1 
+Indirectstar0x409729  3 Indirectend0x40158a 3 
+Indirectstar0x409729  3 Indirectend0x401614 3 
+Indirectstar0x409729  3 Indirectend0x401b17 2 
+Indirectstar0x409729  3 Indirectend0x401bd8 2 
+Indirectstar0x409729  3 Indirectend0x401d82 2 
+Indirectstar0x409729  3 Indirectend0x401e5f 2 
+Indirectstar0x409729  3 Indirectend0x402026 3 
+Indirectstar0x409729  3 Indirectend0x403a61 2 
+Indirectstar0x409729  3 Indirectend0x403b4a 2 
+Indirectstar0x409729  3 Indirectend0x403b82 2 
+Indirectstar0x409729  3 Indirectend0x403cf7 2 
+Indirectstar0x409729  3 Indirectend0x403e49 2 
+Indirectstar0x409729  3 Indirectend0x403ff2 2 
+Indirectstar0x409729  3 Indirectend0x4040f2 2 
+Indirectstar0x409729  3 Indirectend0x404225 3 
+Indirectstar0x409729  3 Indirectend0x4043c1 3 
+Indirectstar0x409729  3 Indirectend0x40453c 3 
+Indirectstar0x409729  3 Indirectend0x4046a5 1 
+Indirectstar0x409729  3 Indirectend0x4046dd 0 
+Indirectstar0x409729  3 Indirectend0x404710 0 
+Indirectstar0x409729  3 Indirectend0x404744 1 
+Indirectstar0x409729  3 Indirectend0x40478b 2 
+Indirectstar0x409729  3 Indirectend0x404810 1 
+Indirectstar0x409729  3 Indirectend0x404865 2 
+Indirectstar0x409729  3 Indirectend0x404995 0 
+Indirectstar0x409729  3 Indirectend0x4049c8 0 
+Indirectstar0x409729  3 Indirectend0x4049fc 0 
+Indirectstar0x409729  3 Indirectend0x404a70 0 
+Indirectstar0x409729  3 Indirectend0x404a8d 0 
+Indirectstar0x409729  3 Indirectend0x404b51 2 
+Indirectstar0x409729  3 Indirectend0x404cac 2 
+Indirectstar0x409729  3 Indirectend0x4050d9 3 
+Indirectstar0x409729  3 Indirectend0x405d1d 2 
+Indirectstar0x409729  3 Indirectend0x405d93 2 
+Indirectstar0x409729  3 Indirectend0x405e0d 1 
+Indirectstar0x409729  3 Indirectend0x405e59 1 
+Indirectstar0x409729  3 Indirectend0x405eb6 1 
+Indirectstar0x409729  3 Indirectend0x405f0e 1 
+Indirectstar0x409729  3 Indirectend0x405f28 0 
+Indirectstar0x409729  3 Indirectend0x405f81 0 
+Indirectstar0x409729  3 Indirectend0x406743 1 
+Indirectstar0x409729  3 Indirectend0x4067ec 1 
+Indirectstar0x409729  3 Indirectend0x406802 1 
+Indirectstar0x409729  3 Indirectend0x406825 2 
+Indirectstar0x409729  3 Indirectend0x407148 2 
+Indirectstar0x409729  3 Indirectend0x407167 2 
+Indirectstar0x409729  3 Indirectend0x40719c 3 
+Indirectstar0x409729  3 Indirectend0x4072e1 3 
+Indirectstar0x409729  3 Indirectend0x407491 3 
+Indirectstar0x409729  3 Indirectend0x40752f 2 
+Indirectstar0x409729  3 Indirectend0x4075e3 3 
+Indirectstar0x409729  3 Indirectend0x4078fd 2 
+Indirectstar0x409729  3 Indirectend0x40795f 2 
+Indirectstar0x409729  3 Indirectend0x4079c1 2 
+Indirectstar0x409729  3 Indirectend0x4079fd 1 
+Indirectstar0x409729  3 Indirectend0x407aa2 3 
+Indirectstar0x409729  3 Indirectend0x407b2c 0 
+Indirectstar0x409729  3 Indirectend0x407b5f 0 
+Indirectstar0x409729  3 Indirectend0x407b93 0 
+Indirectstar0x409729  3 Indirectend0x407c07 3 
+Indirectstar0x409729  3 Indirectend0x407e72 3 
+Indirectstar0x409729  3 Indirectend0x407ff6 0 
+Indirectstar0x409729  3 Indirectend0x408082 1 
+Indirectstar0x409729  3 Indirectend0x4080cf 1 
+Indirectstar0x409729  3 Indirectend0x40811d 1 
+Indirectstar0x409729  3 Indirectend0x40815f 0 
+Indirectstar0x409729  3 Indirectend0x4082fe 0 
+Indirectstar0x409729  3 Indirectend0x408361 2 
+Indirectstar0x409729  3 Indirectend0x4083e7 0 
+Indirectstar0x409729  3 Indirectend0x408472 3 
+Indirectstar0x409729  3 Indirectend0x4086e4 3 
+Indirectstar0x409729  3 Indirectend0x408a04 2 
+Indirectstar0x409729  3 Indirectend0x409098 0 
+Indirectstar0x409729  3 Indirectend0x4090a5 1 
+Indirectstar0x409729  3 Indirectend0x4090b8 0 
+  now finished handling the process and going to    
+ the number of functions that a call site could target at are blow 
+0x400910 = 126  
+ the number of functions that a call site could target at are blow 
+0x400ac4 = 126  
+ the number of functions that a call site could target at are blow 
+0x409729 = 106  
+
+[unused]
+
+[done]

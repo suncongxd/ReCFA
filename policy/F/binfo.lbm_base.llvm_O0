@@ -1,0 +1,285 @@
+Object: lbm_base.llvm_O0
+Functions: 45
+
+[varargs]
+
+[args]
+0x400720 = 0 (_init) 
+0x400840 = 3 (_start) 
+0x400870 = 0 (_dl_relocate_static_pie) 
+0x400880 = 0 (deregister_tm_clones) 
+0x4008b0 = 0 (register_tm_clones) 
+0x4008f0 = 0 (__do_global_dtors_aux) 
+0x400920 = 0 (frame_dummy) 
+0x400930 = 1 (LBM_allocateGrid) 
+0x4009b0 = 1 (LBM_freeGrid) 
+0x4009f0 = 1 (LBM_initializeGrid) 
+0x400bb0 = 2 (LBM_swapGrids) 
+0x400bf0 = 2 (LBM_loadObstacleFile) 
+0x400cf0 = 1 (LBM_initializeSpecialCellsForLDC) 
+0x400e60 = 1 (LBM_initializeSpecialCellsForChannel) 
+0x400fc0 = 2 (LBM_performStreamCollide) 
+0x401ff0 = 1 (LBM_handleInOutFlow) 
+0x403c80 = 1 (LBM_showGridStatistics) 
+0x404250 = 3 (LBM_storeVelocityField) 
+0x404ac0 = 2 (storeValue) 
+0x404b70 = 3 (LBM_compareVelocityField) 
+0x405480 = 2 (loadValue) 
+0x405530 = 2 (main) 
+0x405620 = 3 (MAIN_parseCommandLine) 
+0x4057d0 = 1 (MAIN_printInfo) 
+0x405930 = 1 (MAIN_initialize) 
+0x405a10 = 1 (MAIN_finalize) 
+0x405ab0 = 3 (__libc_csu_init) 
+0x405b20 = 0 (__libc_csu_fini) 
+0x405b30 = 2 (__stat) 
+0x405b40 = 0 (_fini) 
+
+[icall-args]
+0x400730 = 6 (_init.0)
+0x400864 = 6 (_start.0)
+0x405af9 = 3 (__libc_csu_init.0)
+
+[plts]
+0x400750 = free
+0x400760 = __isoc99_fscanf
+0x400770 = fread
+0x400780 = fclose
+0x400790 = printf
+0x4007a0 = fgetc
+0x4007b0 = fprintf
+0x4007c0 = memcpy
+0x4007d0 = __xstat
+0x4007e0 = malloc
+0x4007f0 = fopen
+0x400800 = atoi
+0x400810 = exit
+0x400820 = fwrite
+0x400830 = sqrt
+
+[disas-errors]
+
+[non-voids]
+0x400720 = _init
+0x400840 = _start
+0x400880 = deregister_tm_clones
+0x4008b0 = register_tm_clones
+0x400920 = frame_dummy
+0x400930 = LBM_allocateGrid
+0x4009b0 = LBM_freeGrid
+0x4009f0 = LBM_initializeGrid
+0x400bb0 = LBM_swapGrids
+0x400bf0 = LBM_loadObstacleFile
+0x400cf0 = LBM_initializeSpecialCellsForLDC
+0x400e60 = LBM_initializeSpecialCellsForChannel
+0x400fc0 = LBM_performStreamCollide
+0x401ff0 = LBM_handleInOutFlow
+0x403c80 = LBM_showGridStatistics
+0x404250 = LBM_storeVelocityField
+0x404ac0 = storeValue
+0x404b70 = LBM_compareVelocityField
+0x405480 = loadValue
+0x405530 = main
+0x405620 = MAIN_parseCommandLine
+0x4057d0 = MAIN_printInfo
+0x405930 = MAIN_initialize
+0x405a10 = MAIN_finalize
+0x405ab0 = __libc_csu_init
+0x405b30 = __stat
+
+[non-void-icalls]
+
+[prof-goals]
+0x400730 = _init.0 -> 0x405ab0 = __libc_csu_init
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  MAIN_Param * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  const int 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 4  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  float * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  const int 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 4  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  float * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the size of _icall_args_ is  3  
+  the size of _func_to_int_ is  28  
+  the size of _icall_number is  3  
+  now is going to handle the functions   
+Indirectstar0x400730  6 Indirectend0x405530 2 
+Indirectstar0x400730  6 Indirectend0x405620 3 
+Indirectstar0x400730  6 Indirectend0x4057d0 1 
+Indirectstar0x400730  6 Indirectend0x405930 1 
+Indirectstar0x400730  6 Indirectend0x405a10 1 
+Indirectstar0x400730  6 Indirectend0x400720 0 
+Indirectstar0x400730  6 Indirectend0x400840 3 
+Indirectstar0x400730  6 Indirectend0x400870 0 
+Indirectstar0x400730  6 Indirectend0x4008f0 0 
+Indirectstar0x400730  6 Indirectend0x400920 0 
+Indirectstar0x400730  6 Indirectend0x405ab0 3 
+Indirectstar0x400730  6 Indirectend0x405b20 0 
+Indirectstar0x400730  6 Indirectend0x405b30 2 
+Indirectstar0x400730  6 Indirectend0x405b40 0 
+Indirectstar0x400730  6 Indirectend0x400930 1 
+Indirectstar0x400730  6 Indirectend0x4009b0 1 
+Indirectstar0x400730  6 Indirectend0x4009f0 1 
+Indirectstar0x400730  6 Indirectend0x400bb0 2 
+Indirectstar0x400730  6 Indirectend0x400bf0 2 
+Indirectstar0x400730  6 Indirectend0x400cf0 1 
+Indirectstar0x400730  6 Indirectend0x400e60 1 
+Indirectstar0x400730  6 Indirectend0x400fc0 2 
+Indirectstar0x400730  6 Indirectend0x401ff0 1 
+Indirectstar0x400730  6 Indirectend0x403c80 1 
+Indirectstar0x400730  6 Indirectend0x404250 3 
+Indirectstar0x400730  6 Indirectend0x404ac0 2 
+Indirectstar0x400730  6 Indirectend0x404b70 3 
+Indirectstar0x400730  6 Indirectend0x405480 2 
+Indirectstar0x400864  6 Indirectend0x405530 2 
+Indirectstar0x400864  6 Indirectend0x405620 3 
+Indirectstar0x400864  6 Indirectend0x4057d0 1 
+Indirectstar0x400864  6 Indirectend0x405930 1 
+Indirectstar0x400864  6 Indirectend0x405a10 1 
+Indirectstar0x400864  6 Indirectend0x400720 0 
+Indirectstar0x400864  6 Indirectend0x400840 3 
+Indirectstar0x400864  6 Indirectend0x400870 0 
+Indirectstar0x400864  6 Indirectend0x4008f0 0 
+Indirectstar0x400864  6 Indirectend0x400920 0 
+Indirectstar0x400864  6 Indirectend0x405ab0 3 
+Indirectstar0x400864  6 Indirectend0x405b20 0 
+Indirectstar0x400864  6 Indirectend0x405b30 2 
+Indirectstar0x400864  6 Indirectend0x405b40 0 
+Indirectstar0x400864  6 Indirectend0x400930 1 
+Indirectstar0x400864  6 Indirectend0x4009b0 1 
+Indirectstar0x400864  6 Indirectend0x4009f0 1 
+Indirectstar0x400864  6 Indirectend0x400bb0 2 
+Indirectstar0x400864  6 Indirectend0x400bf0 2 
+Indirectstar0x400864  6 Indirectend0x400cf0 1 
+Indirectstar0x400864  6 Indirectend0x400e60 1 
+Indirectstar0x400864  6 Indirectend0x400fc0 2 
+Indirectstar0x400864  6 Indirectend0x401ff0 1 
+Indirectstar0x400864  6 Indirectend0x403c80 1 
+Indirectstar0x400864  6 Indirectend0x404250 3 
+Indirectstar0x400864  6 Indirectend0x404ac0 2 
+Indirectstar0x400864  6 Indirectend0x404b70 3 
+Indirectstar0x400864  6 Indirectend0x405480 2 
+Indirectstar0x405af9  3 Indirectend0x405530 2 
+Indirectstar0x405af9  3 Indirectend0x405620 3 
+Indirectstar0x405af9  3 Indirectend0x4057d0 1 
+Indirectstar0x405af9  3 Indirectend0x405930 1 
+Indirectstar0x405af9  3 Indirectend0x405a10 1 
+Indirectstar0x405af9  3 Indirectend0x400720 0 
+Indirectstar0x405af9  3 Indirectend0x400840 3 
+Indirectstar0x405af9  3 Indirectend0x400870 0 
+Indirectstar0x405af9  3 Indirectend0x4008f0 0 
+Indirectstar0x405af9  3 Indirectend0x400920 0 
+Indirectstar0x405af9  3 Indirectend0x405ab0 3 
+Indirectstar0x405af9  3 Indirectend0x405b20 0 
+Indirectstar0x405af9  3 Indirectend0x405b30 2 
+Indirectstar0x405af9  3 Indirectend0x405b40 0 
+Indirectstar0x405af9  3 Indirectend0x400930 1 
+Indirectstar0x405af9  3 Indirectend0x4009b0 1 
+Indirectstar0x405af9  3 Indirectend0x4009f0 1 
+Indirectstar0x405af9  3 Indirectend0x400bb0 2 
+Indirectstar0x405af9  3 Indirectend0x400bf0 2 
+Indirectstar0x405af9  3 Indirectend0x400cf0 1 
+Indirectstar0x405af9  3 Indirectend0x400e60 1 
+Indirectstar0x405af9  3 Indirectend0x400fc0 2 
+Indirectstar0x405af9  3 Indirectend0x401ff0 1 
+Indirectstar0x405af9  3 Indirectend0x403c80 1 
+Indirectstar0x405af9  3 Indirectend0x404250 3 
+Indirectstar0x405af9  3 Indirectend0x404ac0 2 
+Indirectstar0x405af9  3 Indirectend0x404b70 3 
+Indirectstar0x405af9  3 Indirectend0x405480 2 
+  now finished handling the process and going to    
+ the number of functions that a call site could target at are blow 
+0x400730 = 28  
+ the number of functions that a call site could target at are blow 
+0x400864 = 28  
+ the number of functions that a call site could target at are blow 
+0x405af9 = 28  
+
+[unused]
+
+[done]

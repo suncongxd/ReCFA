@@ -1,0 +1,383 @@
+Object: mcf_base.llvm_O0
+Functions: 48
+
+[varargs]
+0x402330 = 5 (insert_new_arc) 
+0x402630 = 5 (replace_weaker_arc) 
+0x403460 = 5 (update_tree) 
+
+[args]
+0x400748 = 0 (_init) 
+0x400850 = 3 (_start) 
+0x400880 = 0 (_dl_relocate_static_pie) 
+0x400890 = 0 (deregister_tm_clones) 
+0x4008c0 = 0 (register_tm_clones) 
+0x400900 = 0 (__do_global_dtors_aux) 
+0x400930 = 0 (frame_dummy) 
+0x400940 = 0 (global_opt) 
+0x400ae0 = 2 (main) 
+0x400ca0 = 1 (refresh_neighbour_lists) 
+0x400d90 = 1 (refresh_potential) 
+0x400ec0 = 1 (flow_cost) 
+0x4010b0 = 1 (flow_org_cost) 
+0x4012a0 = 1 (primal_feasible) 
+0x401470 = 1 (dual_feasible) 
+0x4015c0 = 1 (getfree) 
+0x4016a0 = 1 (read_min) 
+0x4021b0 = 1 (resize_prob) 
+0x402920 = 1 (price_out_impl) 
+0x402e20 = 3 (suspend_impl) 
+0x403030 = 1 (primal_start_artificial) 
+0x403260 = 2 (write_circulations) 
+0x403950 = 5 (primal_iminus) 
+0x403b20 = 3 (primal_update_flow) 
+0x403be0 = 1 (primal_net_simplex) 
+0x403f80 = 2 (bea_is_dual_infeasible) 
+0x403fe0 = 2 (sort_basket) 
+0x404150 = 4 (primal_bea_mpp) 
+0x404530 = 3 (__libc_csu_init) 
+0x4045a0 = 0 (__libc_csu_fini) 
+0x4045a4 = 0 (_fini) 
+
+[icall-args]
+0x400758 = 6 (_init.0)
+0x400874 = 6 (_start.0)
+0x404579 = 3 (__libc_csu_init.0)
+
+[plts]
+0x400770 = free
+0x400780 = strcpy
+0x400790 = fclose
+0x4007a0 = printf
+0x4007b0 = memset
+0x4007c0 = fgets
+0x4007d0 = calloc
+0x4007e0 = fprintf
+0x4007f0 = memcpy
+0x400800 = fflush
+0x400810 = __isoc99_sscanf
+0x400820 = realloc
+0x400830 = fopen
+0x400840 = exit
+
+[disas-errors]
+
+[non-voids]
+0x400748 = _init
+0x400850 = _start
+0x400890 = deregister_tm_clones
+0x4008c0 = register_tm_clones
+0x400930 = frame_dummy
+0x400940 = global_opt
+0x400ae0 = main
+0x400ca0 = refresh_neighbour_lists
+0x400d90 = refresh_potential
+0x400ec0 = flow_cost
+0x4010b0 = flow_org_cost
+0x4012a0 = primal_feasible
+0x401470 = dual_feasible
+0x4015c0 = getfree
+0x4016a0 = read_min
+0x4021b0 = resize_prob
+0x402330 = insert_new_arc
+0x402630 = replace_weaker_arc
+0x402920 = price_out_impl
+0x402e20 = suspend_impl
+0x403030 = primal_start_artificial
+0x403260 = write_circulations
+0x403460 = update_tree
+0x403950 = primal_iminus
+0x403b20 = primal_update_flow
+0x403be0 = primal_net_simplex
+0x403f80 = bea_is_dual_infeasible
+0x403fe0 = sort_basket
+0x404150 = primal_bea_mpp
+0x404530 = __libc_csu_init
+
+[non-void-icalls]
+
+[prof-goals]
+0x400758 = _init.0 -> 0x404530 = __libc_csu_init
+  the name of the type is  int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 4  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  long int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  cost_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is  cost_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  cost_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is  cost_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  cost_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is  long int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  long int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  long int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  flow_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is  flow_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  cost_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is  flow_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is  flow_t * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  long int * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  cost_t 
+  the class name of the type is  BPatch_dataTypeDefine 
+  size of this paramter is 8  
+  the name of the type is  long int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  long int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is  long int 
+  the class name of the type is  BPatch_dataScalar 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is   
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the name of the type is  cost_t * 
+  the class name of the type is  BPatch_dataPointer 
+  size of this paramter is 8  
+  the size of _icall_args_ is  3  
+  the size of _func_to_int_ is  32  
+  the size of _icall_number is  3  
+  now is going to handle the functions   
+Indirectstar0x400758  6 Indirectend0x400ae0 2 
+Indirectstar0x400758  6 Indirectend0x400940 0 
+Indirectstar0x400758  6 Indirectend0x400748 0 
+Indirectstar0x400758  6 Indirectend0x400850 3 
+Indirectstar0x400758  6 Indirectend0x400880 0 
+Indirectstar0x400758  6 Indirectend0x400900 0 
+Indirectstar0x400758  6 Indirectend0x400930 0 
+Indirectstar0x400758  6 Indirectend0x404530 3 
+Indirectstar0x400758  6 Indirectend0x4045a0 0 
+Indirectstar0x400758  6 Indirectend0x4045a4 0 
+Indirectstar0x400758  6 Indirectend0x400ca0 1 
+Indirectstar0x400758  6 Indirectend0x400d90 1 
+Indirectstar0x400758  6 Indirectend0x400ec0 1 
+Indirectstar0x400758  6 Indirectend0x4010b0 1 
+Indirectstar0x400758  6 Indirectend0x4012a0 1 
+Indirectstar0x400758  6 Indirectend0x401470 1 
+Indirectstar0x400758  6 Indirectend0x4015c0 1 
+Indirectstar0x400758  6 Indirectend0x4016a0 1 
+Indirectstar0x400758  6 Indirectend0x4021b0 1 
+Indirectstar0x400758  6 Indirectend0x402330 5 
+Indirectstar0x400758  6 Indirectend0x402630 5 
+Indirectstar0x400758  6 Indirectend0x402920 1 
+Indirectstar0x400758  6 Indirectend0x402e20 3 
+Indirectstar0x400758  6 Indirectend0x403030 1 
+Indirectstar0x400758  6 Indirectend0x403260 2 
+Indirectstar0x400758  6 Indirectend0x403460 5 
+Indirectstar0x400758  6 Indirectend0x403950 5 
+Indirectstar0x400758  6 Indirectend0x403b20 3 
+Indirectstar0x400758  6 Indirectend0x403be0 1 
+Indirectstar0x400758  6 Indirectend0x403f80 2 
+Indirectstar0x400758  6 Indirectend0x403fe0 2 
+Indirectstar0x400758  6 Indirectend0x404150 4 
+Indirectstar0x400874  6 Indirectend0x400ae0 2 
+Indirectstar0x400874  6 Indirectend0x400940 0 
+Indirectstar0x400874  6 Indirectend0x400748 0 
+Indirectstar0x400874  6 Indirectend0x400850 3 
+Indirectstar0x400874  6 Indirectend0x400880 0 
+Indirectstar0x400874  6 Indirectend0x400900 0 
+Indirectstar0x400874  6 Indirectend0x400930 0 
+Indirectstar0x400874  6 Indirectend0x404530 3 
+Indirectstar0x400874  6 Indirectend0x4045a0 0 
+Indirectstar0x400874  6 Indirectend0x4045a4 0 
+Indirectstar0x400874  6 Indirectend0x400ca0 1 
+Indirectstar0x400874  6 Indirectend0x400d90 1 
+Indirectstar0x400874  6 Indirectend0x400ec0 1 
+Indirectstar0x400874  6 Indirectend0x4010b0 1 
+Indirectstar0x400874  6 Indirectend0x4012a0 1 
+Indirectstar0x400874  6 Indirectend0x401470 1 
+Indirectstar0x400874  6 Indirectend0x4015c0 1 
+Indirectstar0x400874  6 Indirectend0x4016a0 1 
+Indirectstar0x400874  6 Indirectend0x4021b0 1 
+Indirectstar0x400874  6 Indirectend0x402330 5 
+Indirectstar0x400874  6 Indirectend0x402630 5 
+Indirectstar0x400874  6 Indirectend0x402920 1 
+Indirectstar0x400874  6 Indirectend0x402e20 3 
+Indirectstar0x400874  6 Indirectend0x403030 1 
+Indirectstar0x400874  6 Indirectend0x403260 2 
+Indirectstar0x400874  6 Indirectend0x403460 5 
+Indirectstar0x400874  6 Indirectend0x403950 5 
+Indirectstar0x400874  6 Indirectend0x403b20 3 
+Indirectstar0x400874  6 Indirectend0x403be0 1 
+Indirectstar0x400874  6 Indirectend0x403f80 2 
+Indirectstar0x400874  6 Indirectend0x403fe0 2 
+Indirectstar0x400874  6 Indirectend0x404150 4 
+Indirectstar0x404579  3 Indirectend0x400ae0 2 
+Indirectstar0x404579  3 Indirectend0x400940 0 
+Indirectstar0x404579  3 Indirectend0x400748 0 
+Indirectstar0x404579  3 Indirectend0x400850 3 
+Indirectstar0x404579  3 Indirectend0x400880 0 
+Indirectstar0x404579  3 Indirectend0x400900 0 
+Indirectstar0x404579  3 Indirectend0x400930 0 
+Indirectstar0x404579  3 Indirectend0x404530 3 
+Indirectstar0x404579  3 Indirectend0x4045a0 0 
+Indirectstar0x404579  3 Indirectend0x4045a4 0 
+Indirectstar0x404579  3 Indirectend0x400ca0 1 
+Indirectstar0x404579  3 Indirectend0x400d90 1 
+Indirectstar0x404579  3 Indirectend0x400ec0 1 
+Indirectstar0x404579  3 Indirectend0x4010b0 1 
+Indirectstar0x404579  3 Indirectend0x4012a0 1 
+Indirectstar0x404579  3 Indirectend0x401470 1 
+Indirectstar0x404579  3 Indirectend0x4015c0 1 
+Indirectstar0x404579  3 Indirectend0x4016a0 1 
+Indirectstar0x404579  3 Indirectend0x4021b0 1 
+Indirectstar0x404579  3 Indirectend0x402920 1 
+Indirectstar0x404579  3 Indirectend0x402e20 3 
+Indirectstar0x404579  3 Indirectend0x403030 1 
+Indirectstar0x404579  3 Indirectend0x403260 2 
+Indirectstar0x404579  3 Indirectend0x403b20 3 
+Indirectstar0x404579  3 Indirectend0x403be0 1 
+Indirectstar0x404579  3 Indirectend0x403f80 2 
+Indirectstar0x404579  3 Indirectend0x403fe0 2 
+  now finished handling the process and going to    
+ the number of functions that a call site could target at are blow 
+0x400758 = 32  
+ the number of functions that a call site could target at are blow 
+0x400874 = 32  
+ the number of functions that a call site could target at are blow 
+0x404579 = 27  
+
+[unused]
+
+[done]
