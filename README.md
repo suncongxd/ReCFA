@@ -81,4 +81,6 @@ Resillent Control-Flow Attestation
   - mutator: the program taking the original binary as input and statically instrumenting the binary into a new binary running as the prover.
   - folding: the control-flow events condensing programs, including the events folding program and the greedy compression program.
   - verifier: the verifier program taking the policy and attesting the control-flow integrity of provers.
+- lib: the share object used by the control-flow folding and greedy compression.
+- policy: the CFI policy files.
 
