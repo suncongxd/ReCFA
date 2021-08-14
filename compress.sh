@@ -1,5 +1,7 @@
 #! /bin/bash
 
+
+
 #specify the compiler of the binaries.
 CP=$1
 
@@ -7,6 +9,7 @@ OL=O0 # O1 O2 O3
 
 recfa_root=$(pwd)
 #echo $recfa_root
+export LD_LIBRARY_PATH=$recfa_root/lib/:$LD_LIBRARY_PATH
 
 event_root=$recfa_root"/spec_"$CP/$OL
 
@@ -27,7 +30,9 @@ declare -A test_case_option=(
 ["gcc"]="l"
 
 )
+<<comment
 
+comment
 
 for name in ${!test_case_option[@]}; do
   file_path=$event_root/$name"_base."$CP"_"$OL"_instru-re"
