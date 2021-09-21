@@ -4,16 +4,16 @@ Resillent Control-Flow Attestation
 ## Requirement
 
 - ReCFA has been tested on Ubuntu-18.04.5 LTS 64-bit
-- Tool dependency (**Please deploy the tools on the host Ubuntu 18.04 running ReCFA, except typearmor.**)
+- Tool dependency
   - gcc 7.5.0
   - llvm 10.0.0
   - Dyninst 10.1.0
   - zstandard 1.5.0
-  - typearmor (latest) with Dyninst 9.3.1. (**Please follow the instructions of the repository `ReCFA-dev` to deploy typearmor in a virtualbox guest Ubuntu 16.04 64bit.**)
+  - typearmor (latest) with Dyninst 9.3.1
 
 ## Deployment
 
-- Install Dyninst 10.1.0 and configure the PATH environment. (**Please follow the instructions of the repository `ReCFA-dev`.**)
+- Install Dyninst 10.1.0 and configure the PATH environment.
 - Install zstandard.
 - (Optional) Build the preCFG used by the call-site filtering:
   ```
@@ -32,8 +32,7 @@ Resillent Control-Flow Attestation
   ./prepare_csfiltering.sh gcc
   ./prepare_csfiltering.sh llvm
   ```
-  (**The outputs of this step will be found in `spec_gcc/O0` and `spec_llvm/O0`. For each binary, e.g. `bzip2_base.gcc_O0`, this step will generate an `.dot` file, a `.filtered` file, and a `.filtered.map` file**)
-
+  For example, for the binary `bzip2_base.gcc_O0`, the `preCFG` will generate an `.dot` file. The script `prepare_csfiltering.sh` will invoke `csfilter.jar` to generate: 1) a `.filtered` file which stores the skipped direct call addresses, 2) a `.filtered.map` file which stores the mapping `M` of the CFI policy, that maps from the predecessor's target address to the skipped call sites.
 - (Optional) Build the mutator of binary for the static instrumentation with Dyninst.
   ```
   cd src/mutator
@@ -45,15 +44,7 @@ Resillent Control-Flow Attestation
   ./instrument.sh gcc
   ./instrument.sh llvm
   ```
-  (**The outputs of this step will be found in `spec_gcc/O0` and `spec_llvm/O0`. For each binary, e.g. `bzip2_base.gcc_O0`, this step will generate a new instrumented binary `bzip2_base.gcc_O0_instru`**)
-
-- **The next step should be running the instrumented binary with the standard workload of SPEC CPU 2k6 benchmark to generate the control-flow events. Because we cannot release SPEC CPU 2k6, we assume this step is done for the artifact evaluation. Please download the following zip files for the control-flow events.**
-
-  - https://drive.google.com/file/d/10WiR7L3w_sRVK1JG6Tu8OKVNexhmwhB6/view?usp=sharing
-  - https://drive.google.com/file/d/1aoc1BppBAKIRDSAT0wsxq9WbkZ_rz_jS/view?usp=sharing
-
-  Put `re-gcc.zip` into directory `spec_gcc/O0` and unzip it. We got the control-flow events files. For example, for the instrumented binary `spec_gcc/O0/bzip2_base.gcc_O0_instru`, the corresponding runtime events extracted from `re-gcc.zip` is the file `spec_gcc/O0/bzip2_base.gcc_O0_instru-re`.
-
+- Move the instrumented prover programs into SPEC2k6 environment (in our repository ReCFA-dev) to run with the standard workloads. The runtime control-flow events will be stored in the `spec_gcc` or `spec_llvm` directory. For example, for the instrumented prover binary `spec_gcc/O0/bzip2_base.gcc_O0_instru`, the runtime events will be stored in `spec_gcc/O0/bzip2_base.gcc_O0_instru-re`.
 - (Optional) Build the folding and greedy-compression program.
   ```
   cd src/folding
@@ -72,22 +63,13 @@ Resillent Control-Flow Attestation
   cd src/verifier
   ./build.sh
   ```
-
-- Generate CFI policy mapping `F` with the patched typearmor. **Please follow the instructions of `ReCFA-dev` to deploy and patch typearmor. (The artifact reviewers can safely skip this step. In the directory `policy/F/` there are the `binfo.*` for the SPEC2k6 binaries evaluated in our paper. The policy files are there.)**
-  - Put the original (un-instrumented) binaries of SPEC2k6 in `typearmor/server-bins`. Then,
-  ```
-  cd typearmor/server-bins
-  ../run-ta-static.sh ./bzip2_base.gcc_O0
-  ```
-  - The policy file will be generated into `typearmor/out/`, e.g. `typearmor/out/binfo.bzip2_base.gcc_O0`.
-  - Move all the policy files into the repository `ReCFA` for use by the verifier.
+  - Generate the CFI policy mapping `F` with the patched typearmor. Following the instructions of the repository `ReCFA-dev` to patch and run typearmor. In the directory `policy/F/` there are the `binfo.*` for the SPEC2k6 binaries evaluated in our paper.
 
 - Run the verifier. (Ensure the policy files are well deployed in `policy/`)
   ```
   ./verify.sh gcc
   ./verify.sh llvm
   ```
-  The attestation results are reported by the verifier at the console.
 
 ## Directory structure
 
