@@ -77,7 +77,7 @@ int main(int argc, char *argv[]) {
   // getline(cin, str);
   // file = (char *)str.c_str();
   readForToNext(argv[4]);
-  // printf("M的大小为%d,F的大小为%d",ForNext.size(),proMap.size());
+  printf("|M|= %lu, |F|= %lu\n", ForNext.size(), proMap.size());
   // exit(1);
   // str="/home/ly/workspace/上下文敏感/1_30刘测试结果/ZYMhaveDC测试结果(4_16)/liu测试结果(4_18)/gcc.cfa_O0
   // str="/root/liu/check/llvm-verifi/gcc_base.llvm_O0_liu-re_allPress";
@@ -95,7 +95,7 @@ int main(int argc, char *argv[]) {
   readReceive(argv[5], Main, Ret);
   // clock_t end1 = clock();
   cout << (timeTotal - timeRead) / CLOCKS_PER_SEC << endl;
-  cout << "execution time: " << timeTotal / CLOCKS_PER_SEC << endl;
+  cout << "execution time (T_vrf): " << timeTotal / CLOCKS_PER_SEC << endl;
   cout << "Num of addresses attested: " << total << endl;
 }
 int st = 0;
